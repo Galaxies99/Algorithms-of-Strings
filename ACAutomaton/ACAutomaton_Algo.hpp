@@ -3,10 +3,10 @@
 # include <string>
 # include <string.h> 
 
-# ifndef _ACautomation_Algo_
-# define _ACautomation_Algo_
+# ifndef _ACAutomaton_Algo_
+# define _ACAutomaton_Algo_
 
-class ACautomation {
+class ACAutomaton {
   private:
     struct TrieNode {
       char c;
@@ -88,7 +88,7 @@ class ACautomation {
     }
   
   public:
-    ACautomation(const std :: vector <std :: string> &_words, char *S) : words(_words) {
+    ACAutomaton(const std :: vector <std :: string> &_words, char *S) : words(_words) {
       passage = S;
       rt = new TrieNode();
       cnt.resize(words.size());
@@ -102,7 +102,7 @@ class ACautomation {
       return cnt;
     }
     
-    ~ACautomation() {
+    ~ACAutomaton() {
       if(rt != nullptr) delete rt;
     }
 };

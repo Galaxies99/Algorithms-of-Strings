@@ -1,7 +1,7 @@
 # include <iostream>
 # include <vector>
 # include <string>
-# include "ACautomation_Algo.hpp"
+# include "ACAutomaton_Algo.hpp"
 
 using namespace std;
 
@@ -20,7 +20,7 @@ int main() {
   }
   cin >> passage;
   
-  ACautomation ACauto(vec, passage);
+  ACAutomaton ACauto(vec, passage);
   vector <int> cnt(ACauto.work());
   
   for (int i = 0; i < n; ++ i) cout << cnt[i] << ' ';

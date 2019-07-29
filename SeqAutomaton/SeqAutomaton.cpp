@@ -1,7 +1,7 @@
 # include <iostream>
 # include <vector>
 # include <string.h>
-# include "SeqAutomation_Algo.hpp"
+# include "SeqAutomaton_Algo.hpp"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main() {
   vec.resize(n);
   for (int i = 0; i < n; ++ i) vec[i] = S[i] - 'a';
   
-  SeqAutomation seqauto(26, vec);
+  SeqAutomaton seqauto(26, vec);
   
   int m;
   cin >> m;

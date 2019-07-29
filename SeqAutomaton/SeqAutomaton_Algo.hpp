@@ -1,15 +1,15 @@
 # include <vector>
 
-# ifndef _SeqAutomation_Algo_
-# define _SeqAutomation_Algo_
+# ifndef _SeqAutomaton_Algo_
+# define _SeqAutomaton_Algo_
 
-class SeqAutomation {
+class SeqAutomaton {
   private:
     int n, m;
     int *hd, *nxt, tot, rt;
     int **nxtChar;
     
-    void buildAutomation(const std :: vector <int> &S) {
+    void buildAutomaton(const std :: vector <int> &S) {
       for (int i = 0; i < m; ++ i) hd[i] = rt;
       for (int i = 0; i < n; ++ i) {
         int p = i + 2, c = S[i];
@@ -21,7 +21,7 @@ class SeqAutomation {
     }
     
   public:
-    SeqAutomation(int _m, const std :: vector <int> &S) {
+    SeqAutomaton(int _m, const std :: vector <int> &S) {
       n = S.size(), m = _m; rt = 1;
       nxtChar = new int* [n + 2];
       for (int i = 0; i < n + 2; ++ i) {
@@ -32,7 +32,7 @@ class SeqAutomation {
       for (int i = 0; i < m; ++ i) hd[i] = 0;
       nxt = new int [n + 2];
       for (int i = 0; i < n + 2; ++ i) nxt[i] = 0;
-      buildAutomation(S);
+      buildAutomaton(S);
     }
     
     bool checkExists(const std :: vector <int> &T) {
@@ -45,7 +45,7 @@ class SeqAutomation {
       return true;
     }
     
-    ~SeqAutomation() {
+    ~SeqAutomaton() {
       for (int i = 0; i < n + 2; ++ i)
         if(nxtChar[i] != nullptr) delete [] nxtChar[i];
       if(nxtChar != nullptr) delete [] nxtChar;
