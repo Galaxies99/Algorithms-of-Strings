@@ -35,7 +35,7 @@ class SeqAutomation {
       buildAutomation(S);
     }
     
-    bool checkExists(const std :: vector <int> T) {
+    bool checkExists(const std :: vector <int> &T) {
       int p = rt;
       for (int i = 0; i < T.size(); ++ i) {
         int c = T[i];
