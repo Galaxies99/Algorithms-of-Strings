@@ -12,6 +12,7 @@ class SuffixArray {
     std :: vector <int> S;
     std :: vector <int> sa;
     std :: vector <int> rk; 
+    std :: vector <int> height;
     int *bucket, *bucket2, *A, *B, *t; 
     
     void work() {
@@ -48,6 +49,14 @@ class SuffixArray {
           rk[sa[i]] = rk[sa[i-1]];
           if(A[sa[i]] != A[sa[i-1]] || B[sa[i]] != B[sa[i-1]]) ++ rk[sa[i]];
         }
+      }
+      
+      height.resize(n + 1);
+      int h = 0;
+      for (int i = 1; i <= n; ++ i) {
+        if(h) -- h;
+        while(S[i + h] == S[sa[rk[i] - 1] + h]) ++ h;
+        height[rank[i]] = h;
       }
       
       delete []bucket;
