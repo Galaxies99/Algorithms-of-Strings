@@ -107,8 +107,9 @@ struct bufferDecode {
   }
 };
  
-TrieNode *rt = new TrieNode(0);
+TrieNode *rt;
 void PPCA :: rawData :: compress() {
+  rt = new TrieNode(0);
   bufferEncode file;
   int cursor = 0, idpool = 1;
   
