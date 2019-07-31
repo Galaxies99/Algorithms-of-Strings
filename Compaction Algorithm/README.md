@@ -14,7 +14,7 @@ Too classic, skipped.
 
 ### Result
 
-Huffman：704 / 1600：没有使用分隔符（可能导致文件中部出现EOF）（懒得改成处理EOF的方案，先这样吧）
+Huffman-1：没有使用分隔符（可能导致文件中部出现EOF）（懒得改成处理EOF的方案，先这样吧）
 
 ```
 Test #1: Your compress Ratio 157.894737
@@ -34,6 +34,29 @@ Test #14: Your compress Ratio 60.510227
 Test #15: Your compress Ratio 68.804813
 Test #16: Your compress Ratio 47.784460
 ```
+
+Huffman-2：使用分隔符：
+
+```
+Test #1: Your compress Ratio 178.947368
+Test #2: Your compress Ratio 48.370372
+Test #3: Your compress Ratio 49.197631
+Test #4: Your compress Ratio 48.313995
+Test #5: Your compress Ratio 48.565923
+Test #6: Your compress Ratio 48.718557
+Test #7: Your compress Ratio 64.302016
+Test #8: Your compress Ratio 65.778041
+Test #9: Your compress Ratio 66.547373
+Test #10: Your compress Ratio 64.144081
+Test #11: Your compress Ratio 64.174270
+Test #12: Your compress Ratio 69.148444
+Test #13: Your compress Ratio 64.567564
+Test #14: Your compress Ratio 68.265529
+Test #15: Your compress Ratio 78.574569
+Test #16: Your compress Ratio 54.356852
+```
+
+
 
 ## LZ77
 
