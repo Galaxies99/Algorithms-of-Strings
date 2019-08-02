@@ -12,3 +12,4 @@ Algorithm Lab implemented in C++
 | Mininum Representation Algorithm      | Finished |
 | Suffix Array                          | Finished |
 | Suffix Automaton                      | Finished |
+| Binary Indexed Tree                   | Finished |
