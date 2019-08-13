@@ -1,7 +1,7 @@
 # include <iostream>
 # include <vector>
 # include <string.h>
-# include "MininumRepresentation_Algo.hpp"
+# include "MinimumRepresentation_Algo.hpp"
 
 using namespace std;
 
@@ -17,7 +17,7 @@ int main() {
   vec.resize(n);
   for (int i = 0; i < n; ++ i) vec[i] = S[i];
   
-  MininumRepresentation calc(vec);
+  MinimumRepresentation calc(vec);
   
   vector <int> rec(calc.work());
   

@@ -1,9 +1,9 @@
 # include <vector>
 
-# ifndef _MininumRepresentation_Algo_
-# define _MininumRepresentation_Algo_
+# ifndef _MinimumRepresentation_Algo_
+# define _MinimumRepresentation_Algo_
 
-class MininumRepresentation {
+class MinimumRepresentation {
   private:
     int n;
     std :: vector <int> S;
@@ -27,7 +27,7 @@ class MininumRepresentation {
     }
      
   public:
-    MininumRepresentation(const std :: vector <int> &_S) : S(_S) {
+    MinimumRepresentation(const std :: vector <int> &_S) : S(_S) {
       n = S.size();
       getResult();
     }
@@ -36,7 +36,7 @@ class MininumRepresentation {
       return res;
     }
     
-    ~MininumRepresentation() {}
+    ~MinimumRepresentation() {}
 };
 
 # endif
