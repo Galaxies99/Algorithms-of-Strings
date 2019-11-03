@@ -1,5 +1,5 @@
-# Algorithm Lab
-Algorithm Lab implemented in C++
+# Algorithm Lab of Strings
+Algorithms of strings, implemented in C++
 
 | 算法                                  | 实现     |
 | ------------------------------------- | -------- |
@@ -11,5 +11,4 @@ Algorithm Lab implemented in C++
 | Palindromic Tree                      | Finished |
 | Mininum Representation Algorithm      | Finished |
 | Suffix Array                          | Finished |
-| Suffix Automaton                      | Finished |
-| Binary Indexed Tree                   | Finished |
+| Suffix Automaton                      | Finish   |
